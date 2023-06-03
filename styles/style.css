@@ -1,0 +1,85 @@
+:root {
+  --primary: #5bc3eb;
+  --secondary: #dadad9;
+  --tertiary: #ede6e3;
+  --danger: #f06449;
+  --dark: #36382e;
+}
+
+body {
+  color: var(--dark);
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.user-form {
+  max-width: 100%;
+}
+
+/* form */
+.input {
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+}
+
+.form {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  margin-bottom: 0.6rem;
+}
+
+/* Button */
+.btn {
+  border: 0;
+  padding: 0.8rem 1rem;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+}
+
+/* margin */
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mt-1 {
+  margin-top: 0.4rem;
+}
+
+.mt-2 {
+  margin-top: 0.8rem;
+}
+
+.mt-3 {
+  margin-top: 1.2rem;
+}
+
+.mt-4 {
+  margin-top: 1.6rem;
+}
+
+.mt-5 {
+  margin-top: 2rem;
+}
+
+.mt-6 {
+  margin-top: 2.4rem;
+}
