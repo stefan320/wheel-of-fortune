@@ -60,6 +60,12 @@ body {
   margin-right: auto !important;
 }
 
+/* colors */
+.color-danger {
+  color: var(--danger)
+}
+
+
 .mt-1 {
   margin-top: 0.4rem;
 }
