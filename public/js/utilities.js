@@ -23,7 +23,7 @@ const showErrorMsg = (targetEl, errorMsg) => {
 
 // Handlers
 const formSubmitHandler = (event) => {
-  event.preventDefault();
+  // event.preventDefault();
   formIsTouched = true;
 
   const name = document.getElementById("name");
