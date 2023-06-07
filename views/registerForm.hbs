@@ -1,11 +1,5 @@
-"use strict";
-
-(function () {
-const WOFwidget = document.getElementById("WOFwidget");
-
-
-WOFwidget.innerHTML = `<div class="form mt-6">
-    <form onsubmit="formSubmitHandler(event)"  action="#" class="user-form mx-auto">
+ <div class="form mt-6">
+    <form onsubmit="formSubmitHandler(event)"  action="/" class="user-form mx-auto">
     <div class="form-group">
         <label class="form-label" for="name">Name</label>
         <input oninput="strValidHadndler(event)" class="input" type="text" id="name" name="name" />
@@ -20,5 +14,4 @@ WOFwidget.innerHTML = `<div class="form mt-6">
     </div>
     <button class="btn btn-primary mt-2">REGISTER</button>
     </form>
-</div>`;
-})();
+</div>
