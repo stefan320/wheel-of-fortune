@@ -1,17 +1,27 @@
  <div class="form mt-6">
-    <form onsubmit="formSubmitHandler(event)"  action="/" class="user-form mx-auto">
+    <form onsubmit="formSubmitHandler(event)" method="POST" action="/register" data-formistouched="{{formIsTouched}}" id="form" class="user-form mx-auto">
     <div class="form-group">
         <label class="form-label" for="name">Name</label>
-        <input oninput="strValidHadndler(event)" class="input" type="text" id="name" name="name" />
+        <input oninput="strValidHadndler(event)" value="{{validInputs.name}}" class="input" type="text" id="name" name="name" />
+        {{#if errors.name}}
+            <div id="error_name" class="mt-1 color-danger">{{errors.name}}</div>
+        {{/if}}
     </div>
     <div class="form-group">
         <label class="form-label" for="surname">Surname</label>
-        <input oninput="strValidHadndler(event)" class="input" type="text" id="surname" name="Surname" />
+        <input oninput="strValidHadndler(event)" value="{{validInputs.surname}}"  class="input" type="text" id="surname" name="surname" />
+        {{#if errors.surname}}
+            <div id="error_surname" class="mt-1 color-danger">{{errors.surname}}</div>
+        {{/if}}
     </div>
     <div class="form-group">
         <label class="form-label" for="email">Email</label>
-        <input oninput="emailValidHadndler(event)" class="input" type="email" id="email" name="Email" />
+        <input oninput="emailValidHadndler(event)" class="input" value="{{validInputs.email}}"  type="email" id="email" name="email" />
+        {{#if errors.email}}
+            <div id="error_email" class="mt-1 color-danger">{{errors.email}}</div>
+        {{/if}}
     </div>
     <button class="btn btn-primary mt-2">REGISTER</button>
     </form>
 </div>
+<script src="js/registerForm.js"></script>
