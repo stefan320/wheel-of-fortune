@@ -22,6 +22,7 @@ app.get('/', (req,res) => {
 app.post('/register',urlencodedParser, (req,res) => {
     const { name, surname, email } = req.body;
     const errors = {};
+    const gameEnteries = ["WIN", "TRY AGAIN","TRY AGAIN", "WIN", "TRY AGAIN","TRY AGAIN","TRY AGAIN","WIN","TRY AGAIN","WIN","TRY AGAIN","TRY AGAIN"];
 
     if (isEmpty(name)) errors.name = "Invalid name";
     if (isEmpty(surname)) errors.surname = "Invalid surname";
@@ -35,7 +36,7 @@ app.post('/register',urlencodedParser, (req,res) => {
         });
     }
 
-    res.status(200).render('wheelOfFortune', errors);
+    res.status(200).render('wheelOfFortune', {gameEnteries});
 })
 
 app.listen(8080, () => {
